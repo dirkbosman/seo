@@ -1,0 +1,65 @@
+<!--
+Author: Dirk Bosman, http://www.dirkjobosman.com/
+Description: Implementation of Rich Snippet Markup for Local Business Reviews. 
+
+Rich snippets general background: 
+https://developers.google.com/search/docs/data-types/reviews
+https://developers.google.com/search/docs/data-types/local-businesses
+http://schema.org/ProfessionalService
+
+Testing for errors: 
+https://search.google.com/structured-data/testing-tool
+
+Applied to Webflow CMS: 
+https://forum.webflow.com/t/rich-snippets-reviews-were-do-i-add-the-html/25226
+http://stackoverflow.com/questions/29160008/new-to-rich-snippets-html-how-do-i-put-them-in-my-code
+
+Example: 
+www.interchiro.com
+-->
+
+
+<!-- Review 1 -->
+<div itemscope itemtype="http://schema.org/Review">
+  <div itemprop="itemReviewed" itemscope itemtype="http://schema.org/ProfessionalService">
+    <img itemprop="image" src="insert_your_image_path_here" alt="Your Company's Name"/>
+    <span itemprop="name">Your Company's Name</span>
+    <span itemprop="address">Your Address</span>
+    <span itemprop="telephone">Your Telephone</span>
+    <span itemprop="priceRange">Between 0 - 1000 EURO</span>
+  </div>
+  <span itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
+    <span itemprop="ratingValue">5</span>
+  </span> stars -
+  <b>"<span itemprop="name">Review Summary</span>" </b>
+  <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <span itemprop="name">Reviewer's Name</span>
+  </span>
+  <span itemprop="reviewBody">Review Body Text</span>
+  <div itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Your Company's Name">
+  </div>
+</div>
+<!-- Review 2 -->
+<div itemscope itemtype="http://schema.org/Review">
+  <div itemprop="itemReviewed" itemscope itemtype="http://schema.org/ProfessionalService">
+    <img itemprop="image" src="insert_your_image_path_here" alt="Your Company's Name"/>
+    <span itemprop="name">Your Company's Name</span>
+    <span itemprop="address">Your Address</span>
+    <span itemprop="telephone">Your Telephone</span>
+    <span itemprop="priceRange">Between 0 - 1000 EURO</span>
+  </div>
+  <span itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
+    <span itemprop="ratingValue">5</span>
+  </span> stars -
+  <b>"<span itemprop="name">Review Summary</span>" </b>
+  <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <span itemprop="name">Reviewer's Name</span>
+  </span>
+  <span itemprop="reviewBody">Review Body Text</span>
+  <div itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Your Company's Name">
+  </div>
+</div>
+<!-- etc... -->
+
