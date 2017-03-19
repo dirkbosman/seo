@@ -63,3 +63,30 @@ www.interchiro.com
 </div>
 <!-- etc... -->
 
+
+<!-- The actual implementation I did in Webflow: -->
+<div style="overflow: hidden;margin-top: 5px;margin-bottom: 5px;">
+  <div itemscope itemtype="http://schema.org/Review">
+        <div itemprop="itemReviewed" itemscope itemtype="http://schema.org/ProfessionalService">
+          <img itemprop="image" src="image_path.png" style="float: left;margin: 0 30px 100% 0;" alt="INTER CHIRO" height="80px" width="80px"/>
+          <b><span itemprop="name">Chiropractie Review</span>:</b>
+        </div>
+        <div style="padding: 5px;">
+          <span itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
+          <span itemprop="ratingValue" style="color: #4f65be;font-size: 25px;">5</span>
+          </span><span style="color: #4f65be;font-size: 25px;">stars</span><br/ >
+          <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <span itemprop="name">Mr. Beerendonk</span>
+          </span>:
+          <i><span itemprop="reviewBody">"Cobus is a very open guy, he is really interested in your well being. He takes the time to explore with you what you really need. He is an expert in chiropractice. Always a pleasure to visit him, even if you don't have a need for physical care!"</span><i/>
+        </div>
+       <div itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+          <meta itemprop="name" content="INTER CHIRO Chiropractie (TM) FB">
+       </div>
+  </div>
+</div>
+
+
+
+
+
